@@ -48,7 +48,9 @@ async function RequestOutput(input: string): Promise<void> {
   })
 
   try {
-    const response = await axios.get(`http://localhost:3500/getOutput?input=${input}`)
+    const response = await axios.get(
+      `https://swat-info-ai-open-ai-backend.vercel.app/getOutput?input=${input}`,
+    )
 
     messages.value.push({
       text: response.data,
