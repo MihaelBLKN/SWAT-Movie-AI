@@ -49,7 +49,7 @@ async function RequestOutput(input: string): Promise<void> {
 
   try {
     const response = await axios.get(
-      `https://swat-info-ai-open-ai-backend.vercel.app/getOutput?input=${input}`,
+      `https://swat-info-ai-open-ai-backend.vercel.app/api/index?input=${input}`,
     )
 
     messages.value.push({
