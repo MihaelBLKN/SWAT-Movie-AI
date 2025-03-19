@@ -36,7 +36,6 @@
 </template>
 
 <script setup lang="ts">
-import ChatMessage from './ChatMessage.vue'
 import axios from 'axios'
 import { ref } from 'vue'
 
